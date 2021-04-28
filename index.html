@@ -9,8 +9,10 @@
 <body style="color: white; background-color: black;">
   <script>
     let lastNames = ["Mason", "Marcora", "Rico", "Neves", "Ivanov"]
-    lastNames.push(prompt("Please enter your last name?"))
-    alert (lastNames)
+    lastName = prompt("Please enter your last name?")
+    lastNames.push(lastName)
+    alert (`Your last name "${lastName}" has been added to the end of the list`)
+    alert (`I have now sorted the list in alphabetical order \n ${lastNames.sort()}`)
   </script>
  </body>
 </html>
